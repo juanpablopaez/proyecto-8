@@ -147,15 +147,7 @@ def CodigoRegion():
 
 def masYmenosContagios():
  print('mostrar la region con mas y menos contagios son ')
- a=Arica=Arica.plot.bar()
- b=Tarapacá=Tarapacá.plot.bar()
- c=Antofagasta=Antofagasta.plot.bar()
- regiones=[a,b,c]
- for i in  regiones:
-     if i <= a:
-         print("arica es mas pequeño")
-     else i <= c:
-         print("anto es mas pequeño")  
+
        
 
 def Salir():
