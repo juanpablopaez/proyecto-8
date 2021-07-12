@@ -137,3 +137,26 @@ def IngresarRegion():
         print('ingrese nuevamente la region.')
         print('revise la ortografia(tildes, mayusculas, minusculas, etc.')
 
+def AnalizarDatos():
+    print('analizando todos los datos')
+    ax=x.plot.bar()
+    plt.show()
+
+def CodigoRegion():
+    IngresarRegion()
+
+def masYmenosContagios():
+ print('mostrar la region con mas y menos contagios son ')
+ a=Arica=Arica.plot.bar()
+ b=Tarapacá=Tarapacá.plot.bar()
+ c=Antofagasta=Antofagasta.plot.bar()
+ regiones=[a,b,c]
+ for i in  regiones:
+     if i <= a:
+         print("arica es mas pequeño")
+     else i <= c:
+         print("anto es mas pequeño")  
+       
+
+def Salir():
+    print('saliendo del programa')
