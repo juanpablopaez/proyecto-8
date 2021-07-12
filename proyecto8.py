@@ -142,7 +142,7 @@ def AnalizarDatos():
     ax=x.plot.bar()
     plt.show()
 
-def CodigoRegion():
+def CodigoRegion():#Llamamos a ingresarRegion para no escribir todo el código otra vez
     IngresarRegion()
 
 def masYmenosContagios():
