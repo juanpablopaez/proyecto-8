@@ -155,7 +155,7 @@ def Salir():
 def menu():
     opc=0
     salir=7
-
+#creamos un  menu interactivo con un ciclo 
     while opc !=salir:
         #mostrar el menu
         print('===='*18)
@@ -185,5 +185,6 @@ def menu():
             masYmenosContagios()
         elif opc=='7':
             Salir()
+#hacemos un break para terminar el while del menu y asi terminar el programa
             break
 menu()
