@@ -1,7 +1,9 @@
 ##proyecto 8 Javier Rivera,Juan Pablo Paez 
-import matplotlib.pyplot as plt
-import pandas as pd
+import matplotlib.pyplot as plt #se importa la libreria matplotlib que con ella podemos hacer graficos
+import pandas as pd #se importa pandas que nos ayuda a analisas datos y leer archivos
+ #se crea una variable que leea el documento CasosNuevosSinSintomas.csv mediante un link 
 x=pd.read_csv('https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto27/CasosNuevosSinSintomas.csv')
+#funcion que hace mostrar todos los nombre de cada region por consola al usuario 
 def MostarRegiones():
     print('1.- Arica y Parinacota')
     print('2.- Tarapacá')
@@ -19,7 +21,7 @@ def MostarRegiones():
     print('14.- Los lagos')
     print('15.- Aysén')
     print('16.- Magallanes')
-
+#muestra codigo de cada region al usuario 
 def MostrarCodigo():
     print('Arica y Parinacota = 15')
     print('Tarapacá = 01')
@@ -37,6 +39,7 @@ def MostrarCodigo():
     print('Los lagos = 10')
     print('Aysén = 11')
     print('Magallanes = 12')
+#funcion que compara que region pidio el usuario o numero de region para mostar su grafico     
 def IngresarRegion():
     nombre=input('ingrese: ')
 
@@ -137,7 +140,7 @@ def IngresarRegion():
     else:
         print('ingrese nuevamente la region.')
         print('revise la ortografia(tildes, mayusculas, minusculas, etc.')
-
+#grafica todas las regiones 
 def AnalizarDatos():
     print('analizando todos los datos')
     ax=x.plot.bar()
