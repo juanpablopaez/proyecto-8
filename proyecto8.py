@@ -147,7 +147,16 @@ def CodigoRegion():#Llamamos a ingresarRegion para no escribir todo el código o
     IngresarRegion()
 
 def masYmenosContagios():
- print('mostrar la region con mas y menos contagios son ')
+ print('region con mas contagios')
+    Metropolitana=x[6:7]
+    print(Metropolitana)
+    ax=Metropolitana.plot.bar()
+    plt.show()
+    print('region con menos contagios')
+    Aysén=x[14:15]
+    print(Aysén)
+    ax=Aysén.plot.bar()
+    plt.show() 
 
        
 
