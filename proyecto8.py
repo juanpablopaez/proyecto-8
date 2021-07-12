@@ -160,3 +160,38 @@ def masYmenosContagios():
 
 def Salir():
     print('saliendo del programa')
+def menu():
+    opc=0
+    salir=7
+
+    while opc !=salir:
+        #mostrar el menu
+        print('===='*18)
+        print('Menú')
+        print ("1.- mostrar lista de regiones. ")
+        print ("2.- mostrar el codigo de cada region.")
+        print ("3.- ingresar una region. ")
+        print ("4.- mostrar un grafico para todas las regiones. ")
+        print ("5.- ingresar el codigo de la region ")
+        print ("6.- para saber cual es la region con mas contagios y cual es que tiene menos contagios ")
+        print ("7.- salir")
+        opc=input("Digitar la opción: ")
+        print('===='*18)
+
+
+        if opc == '1':
+            MostarRegiones()
+        elif opc=='2':
+            MostrarCodigo()
+        elif opc=='3':
+            IngresarRegion()
+        elif opc=='4':
+            AnalizarDatos()
+        elif opc=='5':
+            CodigoRegion()
+        elif opc=='6':
+            masYmenosContagios()
+        elif opc=='7':
+            Salir()
+            break
+menu()
